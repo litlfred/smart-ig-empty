@@ -1,0 +1,42 @@
+﻿smartigempty : Validation Results
+=========================================
+
+err = 1, warn = 1, info = 0
+IG Publisher Version: 1.1.90
+Generated Sat Dec 11 17:27:19 EST 2021. FHIR version 4.0.1 for fhir.who.smart-ig-empty#0.2.1 (canonical = http://worldhealthorganization.github.io/smart-ig-empty)
+ Build Errors : 29 / 0 / 0
+ /home/litlfred/space_cats/smart-ig-empty/fsh-generated/resources/ImplementationGuide-fhir.who.smart-ig-empty : 1 / 1 / 1
+</table>
+== n/a ==
+ERROR: /home/litlfred/space_cats/smart-ig-empty/output/actors.html#/html/body/div/div/div/p/a at Line 195, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /home/litlfred/space_cats/smart-ig-empty/output/artifacts.html#/html/body/div/div/div/p/a at Line 204, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /home/litlfred/space_cats/smart-ig-empty/output/background.html#/html/body/div/div/div/p/a at Line 193, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /home/litlfred/space_cats/smart-ig-empty/output/changes.html#/html/body/div/div/div/p/a at Line 204, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /home/litlfred/space_cats/smart-ig-empty/output/checklist.html#/html/body/div/div/div/p/a at Line 359, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /home/litlfred/space_cats/smart-ig-empty/output/concepts.html#/html/body/div/div/div/p/a at Line 194, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /home/litlfred/space_cats/smart-ig-empty/output/content_profiles.html#/html/body/div/div/div/p/a at Line 195, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /home/litlfred/space_cats/smart-ig-empty/output/data_exchange.html#/html/body/div/div/div/p/a at Line 203, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /home/litlfred/space_cats/smart-ig-empty/output/dependencies.html#/html/body/div/div/div/p/a at Line 197, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /home/litlfred/space_cats/smart-ig-empty/output/deployment.html#/html/body/div/div/div/p/a at Line 206, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /home/litlfred/space_cats/smart-ig-empty/output/dictionary.html#/html/body/div/div/div/p/a at Line 194, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /home/litlfred/space_cats/smart-ig-empty/output/downloads.html#/html/body/div/div/div/p/a at Line 239, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /home/litlfred/space_cats/smart-ig-empty/output/functional.html#/html/body/div/div/div/p/a at Line 195, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /home/litlfred/space_cats/smart-ig-empty/output/index.html#/html/body/div/div/div/div/div/div/div/ol/li/dl/dd/a at Line 230, column 13: The link 'hl7.org/fhir/uv/shorthand/' for "FHIR Shorthand" cannot be resolved
+ERROR: /home/litlfred/space_cats/smart-ig-empty/output/index.html#/html/body/div/div/div/p/a at Line 607, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /home/litlfred/space_cats/smart-ig-empty/output/instructions.html#/html/body/div/div/div/div/div/div/ol/li/a at Line 210, column 42: The link '#checklist' for "Smart Guidelines IG checklist" cannot be resolved (valid targets: [instructions, segment-header, publish-box, bottom, segment-post-footer, family-logo, family-nav, ig-status, top, scope, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: /home/litlfred/space_cats/smart-ig-empty/output/instructions.html#/html/body/div/div/div/div/div/div/ol/li/dl/dd/a at Line 214, column 13: The link 'hl7.org/fhir/uv/shorthand/' for "FHIR Shorthand" cannot be resolved
+ERROR: /home/litlfred/space_cats/smart-ig-empty/output/instructions.html#/html/body/div/div/div/div/div/div/ol/li/dl/dd/a at Line 226, column 68: The link '#checklist' for "Smart Guidelines IG checklist" cannot be resolved (valid targets: [instructions, segment-header, publish-box, bottom, segment-post-footer, family-logo, family-nav, ig-status, top, scope, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: /home/litlfred/space_cats/smart-ig-empty/output/instructions.html#/html/body/div/div/div/p/a at Line 376, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /home/litlfred/space_cats/smart-ig-empty/output/maps.html#/html/body/div/div/div/p/a at Line 199, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /home/litlfred/space_cats/smart-ig-empty/output/personas.html#/html/body/div/div/div/p/a at Line 195, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /home/litlfred/space_cats/smart-ig-empty/output/references.html#/html/body/div/div/div/p/a at Line 214, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /home/litlfred/space_cats/smart-ig-empty/output/requirements.html#/html/body/div/div/div/p/a at Line 205, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /home/litlfred/space_cats/smart-ig-empty/output/security_privacy.html#/html/body/div/div/div/p/a at Line 195, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /home/litlfred/space_cats/smart-ig-empty/output/testing.html#/html/body/div/div/div/p/a at Line 195, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /home/litlfred/space_cats/smart-ig-empty/output/toc.html#/html/body/div/div/div/p/a at Line 192, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /home/litlfred/space_cats/smart-ig-empty/output/transactions.html#/html/body/div/div/div/p/a at Line 194, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /home/litlfred/space_cats/smart-ig-empty/output/usecases.html#/html/body/div/div/div/p/a at Line 195, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /home/litlfred/space_cats/smart-ig-empty/output/workflows.html#/html/body/div/div/div/p/a at Line 196, column 19: The link 'license.html' for "" cannot be resolved
+== fsh-generated/resources/ImplementationGuide-fhir.who.smart-ig-empty.json ==
+WARNING: ImplementationGuide/fhir.who.smart-ig-empty: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: ImplementationGuide/fhir.who.smart-ig-empty: ImplementationGuide.definition: ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide)
