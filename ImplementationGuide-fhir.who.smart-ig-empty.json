@@ -388,6 +388,11 @@
           "generation": "html"
         },
         {
+          "nameUrl": "layers.html",
+          "title": "Layers",
+          "generation": "html"
+        },
+        {
           "nameUrl": "maps.html",
           "title": "Maps",
           "generation": "html"

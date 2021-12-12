@@ -276,6 +276,11 @@
         <generation value="html"/>
       </page>
       <page>
+        <nameUrl value="layers.html"/>
+        <title value="Layers"/>
+        <generation value="html"/>
+      </page>
+      <page>
         <nameUrl value="maps.html"/>
         <title value="Maps"/>
         <generation value="html"/>
