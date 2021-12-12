@@ -3,7 +3,7 @@
   "name": "smartigempty",
   "package-id": "fhir.who.smart-ig-empty",
   "ig-ver": "0.2.1",
-  "date": "Sat, 11 Dec, 2021 22:05:53 -0500",
+  "date": "Sun, 12 Dec, 2021 13:13:56 +0000",
   "errs": 1,
   "warnings": 1,
   "hints": 0,
