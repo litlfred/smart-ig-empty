@@ -363,8 +363,18 @@
           "generation": "html"
         },
         {
+          "nameUrl": "disclaimer.html",
+          "title": "Disclaimer",
+          "generation": "html"
+        },
+        {
           "nameUrl": "downloads.html",
           "title": "Downloads",
+          "generation": "html"
+        },
+        {
+          "nameUrl": "feedback.html",
+          "title": "Feedback",
           "generation": "html"
         },
         {

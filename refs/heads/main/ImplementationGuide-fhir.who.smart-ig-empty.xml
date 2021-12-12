@@ -251,8 +251,18 @@
         <generation value="html"/>
       </page>
       <page>
+        <nameUrl value="disclaimer.html"/>
+        <title value="Disclaimer"/>
+        <generation value="html"/>
+      </page>
+      <page>
         <nameUrl value="downloads.html"/>
         <title value="Downloads"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="feedback.html"/>
+        <title value="Feedback"/>
         <generation value="html"/>
       </page>
       <page>

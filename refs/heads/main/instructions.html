@@ -45,8 +45,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"14"}
-    h3,h4,h5,h6{--heading-prefix:"14"}</style>
+    <style type="text/css">h2{--heading-prefix:"16"}
+    h3,h4,h5,h6{--heading-prefix:"16"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -160,7 +160,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <!-- ReleaseHeader --><p id="publish-box">WHO SMART Guideline: IG Template - Local Development build (v0.2.1). See the <a href="http://worldhealthorganization.github.io/smart-ig-empty/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Instructions</h2>
   
-  <div lang="en"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Creating the GitHub repository</a></li><li><a href="#2">Modifying the template repostiroty</a></li><li><a href="#3">Generating the Implmentation Guide</a></li></ul></div>
+  <div lang="en"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Creating the GitHub repository</a></li><li><a href="#2">Modifying the template repository</a></li><li><a href="#3">Generating the Implmentation Guide</a></li><li><a href="#4">Country Adaptation</a></li></ul></div>
   <a name="scope">   </a>
 
   <p>
@@ -186,7 +186,7 @@ git checkout masin</pre>
     </li>
   </ul>
 
-  <a name="2"></a><h3>Modifying the template repostiroty</h3><a name="modify">  </a>
+  <a name="2"></a><h3>Modifying the template repository</h3><a name="modify">  </a>
   <ul>
     <li>
       Modify the following files as indiciated:
@@ -213,11 +213,11 @@ git checkout masin</pre>
 	</dd>
       </dl>      
     </li>
-    <li><a name="l476">​</a>
+    <li><a name="l479">​</a>
       Create your content following the <a href="#checklist">Smart Guidelines IG checklist</a> and using the following directory and file structure:
       <dl>
 	<dt>input/fsh</dt>
-	<dd><a name="l486">​</a>
+	<dd><a name="l489">​</a>
 	  put any <a href="hl7.org/fhir/uv/shorthand/">FHIR Shorthand</a> (or fsh) files in this directory.
 	</dd>
 	<dt>input/images</dt>
@@ -229,7 +229,7 @@ git checkout masin</pre>
 	  put UML, sequence diagrams, etc in this directory as <a href="https://plantuml.com/">plantUML</a> diagrams.  A UML diagram named XXXX.plantuml can be referenced in a xml file under input/pagecontent as  'include XXXX.svg' <mark>TODO: figure out how to esacpe jekyll control sequences </mark>
 	</dd>
 	<dt>input/pagecontent</dt>
-	<dd><a name="l513">​</a>
+	<dd><a name="l516">​</a>
 	  Edit the following pages by providing content according to the <a href="#checklist">Smart Guidelines IG checklist</a> below.
 	  <dl>
 	    <dt>actors.xml</dt>
@@ -354,9 +354,46 @@ npm install -g sushi</pre></blockquote>
       If all is successful, open the local file 'output/index.html' in your browser and review the content as well as the quality assurance page under 'output/qa.html'
     </li>
     <li>
-      Do a github commit, let the github action run and open at 'https://WorldHealthOrganization.github.io/smart-ig-empty' but change the text <em>smart-ig-empty</em> to <em>smart-ig-my-guide</em>.  
+      Do a github commit, let the github action run and open GitHub pages at <a href="https://WorldHealthOrganization.github.io/smart-ig-empty">smart-ig-empty </a>  but change  <em>smart-ig-empty</em> to <em>smart-ig-my-guide</em>.
     </li>
   </ul>
+
+
+  <a name="4"></a><h3>Country Adaptation</h3><a name="adaptation">  </a>
+  <p>
+    Basic country adaptation of SMART Implementation Guide has a few additional steps. In this case, rather than creating a new repostiory based off of <em>smart-ig-empty</em> you should fork an existing repository, such as <em>smart-ig-anc</em>.         Determine the appropriate ISO-alpha3 and M49 ISO-3166 <a href="https://unstats.un.org/unsd/methodology/m49/">jurisdicition codes</a>.  For the purposes of these instructions, suppose it is <em>EXA</em> and <em>999</em> for an 'Example' country. 
+  </p>
+  <ul>
+    <li>
+      Name the forked repository the same as the repository you are forking from but you should add the ISO-alpha3 code to then end.  For example <em>smart-ig-anc</em> would beceom <em>smart-ig-anc-exa</em>
+    </li>
+    <li>
+      Further modify the following files:
+      <dl>
+	<dt>ig.ini</dt>
+	<dd>
+	  <ul>
+	    <li>
+	      Change the occurence of <em>who</em> in the 'ig' field to the lower-case version of the country code, <em>exa</em>, or whatever is the convention in your country.  For example, 'ig = fsh-generated/resources/ImplementationGuide-fhir.<em>exa</em>.smart-ig-anc.json.
+	    </li>
+	  </ul>
+	</dd>
+	<dt>sushi-config.yaml</dt>
+	<dd>
+	  <ul>
+	    <li>Modigy the 'id' field and replace <em>who</em> with the lower-case version of the country code, <em>exa</em>, or whatever is the convention in your country.  For example 'id: fhir.<em>exa</em>.smart-ig-anc-exa</li>	    
+	    <li>Modifty the 'jursidiciton' field by changing the <em>#001</em> to the appropriate M49 code found <a href="https://unstats.un.org/unsd/methodology/m49/">here</a>. For example 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#<em>999</em>'</li>
+	    <li>Update the 'publisher.name' and 'publisher.url' fields to something appropriate</li>
+	    <li>Update the 'email' field to something appropriate</li>
+	    <li>Change the 'title' field to add in the country name yet still show that it is adapted from the WHO SMART Guidelines.  For example, 'WHO SMART Guideline: Antenatal Care' becomes 'WHO SMART Guideline: Antenatal Care for Example Country' </li>
+	  </ul>
+	</dd>
+      </dl>	
+    </li>
+    <li>Create new ValueSets and appopriate ConceptMaps based on country requirements</li>
+    <li>Modify data collection resources (e.g. Questionnaires), logical models, and document structures to account for country specific data fields</li>
+  </ul>
+
 </div>
 </div>
         </div>    <!-- /inner-wrapper -->
@@ -379,8 +416,8 @@ npm install -g sushi</pre></blockquote>
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l758">​</a>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.smart-ig-empty#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Dec 12, 2021 14:50+0000">2021-12-12</span>
+        <p><a name="l875">​</a>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.smart-ig-empty#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Dec 12, 2021 19:17+0000">2021-12-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
